@@ -1,0 +1,41 @@
+<div *ngFor="let club of clubs">
+  <div class="club-content" id="{{ club.club_name }}">
+    <div class="card-front">
+      <div class="layer">
+        <div class="img-txt">
+          <img [src]="club.logo_image" alt="" />
+          <h1>{{ club.club_nick_name }}</h1>
+        </div>
+        <div class="corners">
+          <div class="corner"></div>
+          <div class="corner"></div>
+          <div class="corner"></div>
+          <div class="corner"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="display-data">
+      <h4 class="club-name">{{ club.club_name }}</h4>
+      <p class="desc">{{ club.description }}</p>
+      <div class="faculties">
+        <app-flip-card
+          class="faculty"
+          [frontText]="faculty[0]"
+          [backText]="faculty[1]"
+          *ngFor="let faculty of club.facultyArray"
+        ></app-flip-card>
+      </div>
+      <div class="admins">
+        <app-flip-card
+          class="student"
+          [frontText]="student[0]"
+          [backText]="student[1]"
+          *ngFor="let student of club.headsArray"
+        ></app-flip-card>
+      </div>
+
+      <a [routerLink]="['/more-info', club.id]" class="more">View More</a>
+    </div>
+  </div>
+</div>

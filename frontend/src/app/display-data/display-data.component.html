@@ -1,0 +1,22 @@
+<div class="display-data">
+  <h4 class="club-name">{{ club_name }}</h4>
+  <p class="desc">
+    {{ description }}
+  </p>
+  <div class="faculties">
+    <app-flip-card
+      class="faculty"
+      [frontText]="faculty[0]"
+      [backText]="faculty[1]"
+      *ngFor="let faculty of facultyArray"
+    ></app-flip-card>
+  </div>
+  <div class="admins">
+    <app-flip-card
+      class="student"
+      [frontText]="head[0]"
+      [backText]="head[1]"
+      *ngFor="let head of headsArray"
+    ></app-flip-card>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div
+  class="flip-container"
+  (mouseenter)="isFlipped = true"
+  (mouseleave)="isFlipped = false"
+>
+  <div class="flip-card" [class.flipped]="isFlipped">
+    <div class="flip-card-front">
+      <span>{{ frontText }}</span>
+    </div>
+    <div class="flip-card-back">
+      <span>{{ backText }}</span>
+    </div>
+  </div>
+</div>

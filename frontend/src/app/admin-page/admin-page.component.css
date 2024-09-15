@@ -1,0 +1,107 @@
+.body-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  padding: 20px 0px;
+}
+
+.heading {
+  font-size: 38px;
+  font-weight: 700;
+}
+.edit-club-details,
+.edit-admin-details {
+  width: 60%;
+  background-color: #131a3a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  border-radius: 35px;
+  box-shadow: 1px 1px 10px #000825, 1px 1px 10px #000825;
+  padding: 20px 100px;
+  margin: 40px 0px;
+}
+
+.club-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.5fr;
+  grid-gap: 10px;
+  text-align: left;
+  color: #000;
+}
+
+.admin-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  text-align: left;
+  color: #000;
+}
+
+.club-header {
+  font-weight: bold;
+  display: contents;
+  color: #fff;
+}
+
+.club-item {
+  display: contents;
+}
+
+.club-item div {
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+.body-content h2 {
+  font-size: 28px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.club-list,
+.admin-list {
+  margin: 20px 0px;
+}
+
+.edit-btn {
+  background-color: #edc35f;
+  color: #000;
+  padding: 5px 10px;
+
+  border: none;
+
+  opacity: 0.75;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.edit-btn:hover {
+  opacity: 1;
+  transition: 0.5s;
+  box-shadow: inset 1px 1px 10px #bb9232, 1px 1px 10px #bb9232;
+}
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.add img,
+.subtract img {
+  width: 20px;
+  height: 20px;
+}
+
+.btns .add,
+.btns .subtract {
+  border-radius: 20px;
+  border-color: #fff;
+  padding: 5px;
+  margin: 0px 20px;
+}

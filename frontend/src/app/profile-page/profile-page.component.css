@@ -1,0 +1,98 @@
+.profile-body {
+  padding-top: 25px;
+  width: 100%;
+}
+
+.container {
+  max-width: 60%;
+  background-color: #131a3a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  border-radius: 35px;
+  box-shadow: 1px 1px 10px #000825, 1px 1px 10px #000825;
+  padding: 0 100px;
+}
+
+.second-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form-sheet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.img-size {
+  width: 150px;
+  height: 150px;
+}
+.title {
+  padding-top: 10px;
+  background-color: transparent;
+  font-weight: 900;
+  font-size: 26px;
+  color: #fff;
+  text-align: center;
+
+  text-decoration-line: underline;
+  text-decoration-color: #fff;
+  text-underline-offset: 20px;
+
+  padding-bottom: 40px;
+}
+
+label {
+  background-color: transparent;
+  color: #fff;
+  padding-bottom: 5px;
+  float: left;
+}
+
+input {
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  max-width: 100%;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+.savebtn,
+.cancelbtn {
+  background-color: #edc35f;
+  color: #000;
+  padding: 10px 20px;
+
+  border: none;
+
+  opacity: 0.75;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.savebtn:hover,
+.cancelbtn:hover {
+  opacity: 1;
+  transition: 0.5s;
+  box-shadow: inset 1px 1px 10px #bb9232, 1px 1px 10px #bb9232;
+}

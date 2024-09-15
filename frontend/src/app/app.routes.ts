@@ -1,0 +1,20 @@
+import { Routes } from '@angular/router';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { LogInComponent } from './log-in/log-in.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { ClubContentComponent } from './club-content/club-content.component';
+import { MoreInfoComponent } from './more-info/more-info.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { AdminPageComponent } from './admin-page/admin-page.component';
+import { ClubAdminPageComponent } from './club-admin-page/club-admin-page.component';
+export const routes: Routes = [
+  { path: 'signup-page', component: SignUpComponent },
+  { path: 'nav-bar', component: NavBarComponent },
+  { path: 'login-page', component: LogInComponent },
+  { path: '', component: HomePageComponent },
+  { path: 'more-info/:id', component: MoreInfoComponent },
+  { path: 'profile-page', component: ProfilePageComponent },
+  { path: 'admin-page', component: AdminPageComponent },
+  { path: 'club-admin-page', component: ClubAdminPageComponent },
+];

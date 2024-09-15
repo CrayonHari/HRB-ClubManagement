@@ -1,0 +1,37 @@
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.members-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+}
+
+.members-section h2 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.members-section .year {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+app-single-member {
+  padding: 10px;
+}
+
+.members-section .txt {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}

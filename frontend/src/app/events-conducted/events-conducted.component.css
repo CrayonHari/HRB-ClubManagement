@@ -1,0 +1,27 @@
+.events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.event {
+  padding-bottom: 20px;
+}
+.event h2 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.event a {
+  text-decoration: none;
+  color: #131a3a;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.event a:hover {
+  text-decoration: underline;
+}

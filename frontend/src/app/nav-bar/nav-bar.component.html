@@ -1,0 +1,38 @@
+<div class="nav-bar">
+  <div class="logo-container">
+    <a routerLink=""><img class="logo" src="/images/logo.png" alt="" /></a>
+  </div>
+  <ul class="nav-text">
+    <li class="site-name">
+      <a routerLink="">
+        H <br />&nbsp; R <br />
+        &nbsp;&nbsp;&nbsp; M
+      </a>
+    </li>
+
+    <li class="menu-container">
+      <div class="menu-bar">
+        <div class="dropdown">
+          <a class="club">Clubs</a>
+          <div class="dropdown-content">
+            <a href="#{{ club.club_name }}" *ngFor="let club of clubs">{{
+              club.club_name
+            }}</a>
+          </div>
+        </div>
+        <a class="login" routerLink="/login-page" *ngIf="!isAuthenticated">
+          <span>Log In</span>
+        </a>
+        <div class="dropdown" *ngIf="isAuthenticated">
+          <a class="club"><img src="/images/user-profile.png" /></a>
+          <div class="dropdown-content">
+            <a routerLink="/profile-page">My Profile</a>
+            <!-- <a *ngIf="isAdmin" routerLink="/admin-page">Admin Dashboard</a> -->
+            <!-- <a routerLink="/club-admin-page">Edit Club Details</a> -->
+            <a routerLink="/" (click)="onLogout()">Log Out</a>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

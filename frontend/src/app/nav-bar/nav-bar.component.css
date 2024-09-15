@@ -1,0 +1,138 @@
+* {
+  background: none;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Roboto Serif", serif;
+}
+
+.nav-bar {
+  background-color: #edc35f;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #a67502;
+}
+
+.logo-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  max-width: 70px;
+}
+
+.nav-text {
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+.nav-text li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100%;
+}
+
+.site-name {
+  font-weight: 900;
+  line-height: 18px;
+}
+.site-name a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #000;
+}
+
+.menu-container {
+  height: 100%;
+}
+.menu-container .menu-bar {
+  display: flex;
+  height: 100%;
+}
+
+.menu-bar a {
+  display: flex;
+
+  align-items: center;
+  height: 100%;
+  padding: 0 25px 0 25px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+
+.menu-bar a:last-child {
+  margin-right: 0px;
+}
+
+.menu-bar a:hover {
+  background-color: #131a3a;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px #050e2d, 1px 1px 10px #0c1437;
+  transition: 1s;
+}
+
+.menu-bar a:hover {
+  color: #edd08a;
+}
+
+.login span {
+  font-weight: 900;
+  color: #131a3a;
+}
+.menu-bar .login:hover span {
+  color: #edd08a;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown img {
+  width: 50px;
+  height: 50px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #131a3a;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #edc35f;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .club {
+  background-color: #131a3a;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px #050e2d, 1px 1px 10px #0c1437;
+  transition: 1s;
+  color: #edd08a;
+}

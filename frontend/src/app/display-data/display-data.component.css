@@ -1,0 +1,40 @@
+.display-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  height: 350px;
+}
+
+.faculties {
+  display: flex;
+}
+
+.admins {
+  display: flex;
+}
+
+.display-data .club-name {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.display-data .desc {
+  font-weight: 500;
+}
+
+.display-data .faculties .faculty {
+  padding: 5px;
+}
+
+.display-data .admins .student {
+  padding: 5px;
+}
+
+.display-data .more {
+  text-decoration: none;
+  text-align: right;
+  color: #131a3a;
+  font-weight: 700;
+}

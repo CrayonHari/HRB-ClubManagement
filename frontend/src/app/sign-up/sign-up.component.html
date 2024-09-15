@@ -1,0 +1,43 @@
+<div class="signup-body">
+  <div class="container">
+    <div class="title">Register</div>
+
+    <label for="name" class="name">Name </label>
+    <input type="text" #nameInput class="input-name" required />
+
+    <label for="rollno" class="rollno">Roll Number</label>
+    <input type="text" #rollnoInput class="input-rollno" required />
+
+    <label for="email" class="email">Email</label>
+    <input type="email" #emailInput class="input-email" required />
+
+    <label for="password" class="password">Password</label>
+    <input type="password" #passwordInput class="input-password" required />
+
+    <label for="password_confirm" class="confirm-password"
+      >Confirm Password</label
+    >
+    <input
+      type="password"
+      #passwordConfirmationInput
+      class="input-confirm-password"
+      required
+    />
+    <div class="btn">
+      <button
+        class="signupbtn"
+        (click)="
+          SignUp(
+            nameInput,
+            rollnoInput,
+            emailInput,
+            passwordInput,
+            passwordConfirmationInput
+          )
+        "
+      >
+        Sign Up
+      </button>
+    </div>
+  </div>
+</div>

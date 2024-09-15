@@ -1,0 +1,42 @@
+<div class="signup-body">
+  <div class="container">
+    <div class="title">Log In</div>
+
+    <label class="email" for="email">Email</label>
+    <input
+      type="email"
+      #emailInput
+      class="input-email"
+      id="email"
+      name="email"
+      required
+    />
+
+    <label class="password" for="password">Password</label>
+    <input
+      type="password"
+      class="input-password"
+      id="password"
+      name="password"
+      #passwordInput
+      required
+    />
+
+    <a href="/forgot-password" class="links texts">Forgot Password?</a>
+
+    <div class="btn">
+      <button
+        type="submit"
+        (click)="login(emailInput, passwordInput)"
+        class="loginbtn"
+      >
+        Log In
+      </button>
+    </div>
+
+    <span class="texts"
+      >Don't have an account?
+      <a href="/signup-page" class="texts links">Register!</a></span
+    >
+  </div>
+</div>

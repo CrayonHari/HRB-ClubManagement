@@ -1,0 +1,22 @@
+<div class="more-info">
+  <app-card
+    [logo_image]="club?.logo_image"
+    [club_nick_name]="club?.club_nick_name"
+  ></app-card>
+  <app-display-data
+    [club_name]="club?.club_name"
+    [description]="club?.description"
+    [facultyArray]="club?.facultyArray"
+    [headsArray]="club?.headsArray"
+  ></app-display-data>
+</div>
+
+<div class="left-out">
+  <app-member-list
+    *ngFor="let user of member"
+    [name]="user?.name"
+    [rollno]="user?.rollno"
+  ></app-member-list>
+
+  <!-- <app-events-conducted></app-events-conducted> -->
+</div>

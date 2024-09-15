@@ -1,0 +1,41 @@
+<div class="profile-body" *ngIf="user">
+  <div class="container">
+    <div class="title">My Profile</div>
+    <div class="second-row">
+      <div class="form-sheet">
+        <label for="" class="name">Name </label>
+        <input
+          type="text"
+          class="input-name"
+          value="{{ user.name }}"
+          id="name"
+        />
+        <label for="" class="rollno">Roll Number</label>
+        <input
+          type="text"
+          class="input-rollno"
+          value="{{ user.rollno }}"
+          id="rollno"
+        />
+        <label for="" class="email">Email</label>
+        <input
+          type="text"
+          class="input-email"
+          value="{{ user.email }}"
+          id="email"
+        />
+      </div>
+      <div class="image">
+        <img src="{{ user.image_src }}" alt="" class="img-size" />
+      </div>
+    </div>
+    <div class="btn-container">
+      <div class="btn">
+        <button class="savebtn" (click)="makeChanges()">Save Changes</button>
+      </div>
+      <div class="btn">
+        <button class="cancelbtn">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
